@@ -14,7 +14,9 @@ node {
     }
 
     stage('Build') {
-
+        dir('fastlane') {
+            sh 'fastlane buildApp'
+        }
     }
 
     stage('Deploy') {

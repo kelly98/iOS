@@ -27,4 +27,19 @@ platform :ios do
     puts 'iam goint to clear derived data'
     clear_derived_data
   end
+
+  lane :buildApp do | options | 
+    # gym(scheme: "iOSFastlane")
+    # Dir.chdir
+    # Dir.chdir("/Users/kelly/Source/iOS/")
+    sh 'pwd'
+    # xcodebuild(
+    #   archive: false,
+    #   archive_path: "./build-dir/iOSFastlane.xcarchive",
+    #   scheme: "iOSFastlane",
+    #   workspace: "iOSFastlane.xcodeproj"
+    # )
+    xcbuild
+
+  end
 end
