@@ -1,5 +1,13 @@
 node {
-    stage('Run unit test') 
-    stage('Build')
-    stage('Deploy')
+    stage('Run unit test') {
+
+    }
+
+    stage('Build') {
+
+    }
+
+    stage('Deploy') {
+        
+    }
 }
